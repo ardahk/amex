@@ -6,5 +6,6 @@ This repository contains source code and supporting datasets (publicly available
 To develop a recommendation engine using a 2-tower model with attention mechanisms to optimize recommendation relevance for diverse applications. 
 
 ## Table of Contents
-- [Datasets] #data
-- [Data Cleaning + EDA] #cleaning
+- [Datasets](#data)
+- [Data Cleaning + EDA](#cleaning)
+
