@@ -38,6 +38,54 @@ The model's performance is evaluated using metrics such as precision, recall, an
 
 ## Contributors
 <!-- readme: contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/asmik12">
+                    <img src="https://avatars.githubusercontent.com/u/168493757?v=4" width="100;" alt="asmik12"/>
+                    <br />
+                    <sub><b>Asmi K</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/paigecaskey">
+                    <img src="https://avatars.githubusercontent.com/u/120995805?v=4" width="100;" alt="paigecaskey"/>
+                    <br />
+                    <sub><b>Paige Caskey</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ardahk">
+                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
+                    <br />
+                    <sub><b>Arda Hoke</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Rebeccals">
+                    <img src="https://avatars.githubusercontent.com/u/2145912?v=4" width="100;" alt="Rebeccals"/>
+                    <br />
+                    <sub><b>Rebecca Smith</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/tanishaad">
+                    <img src="https://avatars.githubusercontent.com/u/100120733?v=4" width="100;" alt="tanishaad"/>
+                    <br />
+                    <sub><b>tanisha dutta</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/vaishnavi-rama">
+                    <img src="https://avatars.githubusercontent.com/u/156384098?v=4" width="100;" alt="vaishnavi-rama"/>
+                    <br />
+                    <sub><b>vaishnavi-rama</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: contributors -end -->
 This project is a collaborative effort by the following team members:
 
