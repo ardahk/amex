@@ -37,7 +37,8 @@ An attention mechanism is incorporated to weigh the importance of different feat
 The model's performance is evaluated using metrics such as precision, recall, and mean reciprocal rank (MRR). Comparative analyses with baseline models are conducted to demonstrate the effectiveness of the proposed approach.
 
 ## Contributors
-
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 This project is a collaborative effort by the following team members:
 
 - [Arda Hoke](https://github.com/ardahk)
