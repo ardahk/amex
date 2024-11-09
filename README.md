@@ -42,13 +42,6 @@ This project is a collaborative effort by the following team members:
 <table>
 	<tbody>
 		<tr>
-	    <td align="center">
-                <a href="https://github.com/ardahk">
-                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
-                    <br />
-                    <sub><b>Arda Hoke</b></sub>
-                </a>
-            </td>
             <td align="center">
                 <a href="https://github.com/asmik12">
                     <img src="https://avatars.githubusercontent.com/u/168493757?v=4" width="100;" alt="asmik12"/>
@@ -61,6 +54,13 @@ This project is a collaborative effort by the following team members:
                     <img src="https://avatars.githubusercontent.com/u/120995805?v=4" width="100;" alt="paigecaskey"/>
                     <br />
                     <sub><b>Paige Caskey</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ardahk">
+                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
+                    <br />
+                    <sub><b>Arda Hoke</b></sub>
                 </a>
             </td>
             <td align="center">
