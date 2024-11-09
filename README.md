@@ -37,10 +37,18 @@ An attention mechanism is incorporated to weigh the importance of different feat
 The model's performance is evaluated using metrics such as precision, recall, and mean reciprocal rank (MRR). Comparative analyses with baseline models are conducted to demonstrate the effectiveness of the proposed approach.
 
 ## Contributors
+This project is a collaborative effort by the following team members:
 <!-- readme: contributors -start -->
 <table>
 	<tbody>
 		<tr>
+	    <td align="center">
+                <a href="https://github.com/ardahk">
+                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
+                    <br />
+                    <sub><b>Arda Hoke</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/asmik12">
                     <img src="https://avatars.githubusercontent.com/u/168493757?v=4" width="100;" alt="asmik12"/>
@@ -53,13 +61,6 @@ The model's performance is evaluated using metrics such as precision, recall, an
                     <img src="https://avatars.githubusercontent.com/u/120995805?v=4" width="100;" alt="paigecaskey"/>
                     <br />
                     <sub><b>Paige Caskey</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ardahk">
-                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
-                    <br />
-                    <sub><b>Arda Hoke</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -87,14 +88,6 @@ The model's performance is evaluated using metrics such as precision, recall, an
 	<tbody>
 </table>
 <!-- readme: contributors -end -->
-This project is a collaborative effort by the following team members:
-
-- [Arda Hoke](https://github.com/ardahk)
-- [Contributor 2](https://github.com/contributor2)
-- [Contributor 3](https://github.com/contributor3)
-- [Contributor 4](https://github.com/contributor4)
-- [Contributor 5](https://github.com/contributor5)
-- [Contributor 6](https://github.com/contributor6)
 
 ## License
 
