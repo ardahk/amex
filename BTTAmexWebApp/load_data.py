@@ -15,7 +15,7 @@ def get_products_by_user_id(user_id):
     return filtered_products
 
 def get_random_user_id():
-    df = pd.read_csv('https://raw.githubusercontent.com/ardahk/amex/refs/heads/main/data/final_data.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/ardahk/amex/refs/heads/main/final/users_final_data.csv')
     all_user_ids = df['user_id'].unique()
     random_id = random.choice(all_user_ids)
     
