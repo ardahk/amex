@@ -10,7 +10,7 @@ def get_all_orig_data():
     return pd.read_csv('https://raw.githubusercontent.com/ardahk/amex/refs/heads/main/data/final_data.csv')
 
 def get_products_by_user_id(user_id):
-    df = pd.read_csv('data/final_data.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/ardahk/amex/refs/heads/main/data/final_data.csv')
     filtered_products = df.loc[df['user_id'] == user_id, 'name']
     return filtered_products
 
