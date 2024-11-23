@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            text-align: center;
+        }
+        .recommendations {
+            margin-top: 20px;
+        }
+        .recommendations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recommendations li {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Click a user to see their top 5 recommendations:</p>
+    <div>
+        <button onclick="fetchRecommendations(5399)">User 1</button>
+        <button onclick="fetchRecommendations(62965)">User 2</button>
+        <button onclick="fetchRecommendations(539)">User 3</button>
+    </div>
+    <div class="recommendations" id="recommendations">
+        <h2>Recommendations:</h2>
+        <ul id="recommendation-list"></ul>
+    </div>
+    <script>
+        async function fetchRecommendations(userId) {
+            const response = await fetch(`/recommendations/${userId}`);
+            const data = await response.json();
+            const list = document.getElementById('recommendation-list');
+            list.innerHTML = '';
+
+            if (data.recommendations.length === 0) {
+                list.innerHTML = '<li>User not found.</li>';
+            } else {
+                data.recommendations.forEach(product => {
+                    const li = document.createElement('li');
+                    li.textContent = product;
+                    list.appendChild(li);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
