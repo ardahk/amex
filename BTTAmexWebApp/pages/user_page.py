@@ -57,5 +57,5 @@ recommendations = generate_recommendations_for_user(user_id, model)
 st.header("Recommendations")
 df_recommendations = pd.DataFrame(recommendations, columns=["Product Name"])
 
-# Display the DataFrame without the index using st.table()
+# Display the DataFrame
 st.markdown(df_recommendations.to_html(index=False), unsafe_allow_html=True)
