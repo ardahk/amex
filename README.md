@@ -82,17 +82,17 @@ A huge shoutout to the amazing team behind this project! 🙌
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/ardahk">
-                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
-                    <br />
-                    <sub><b>Arda Hoke</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/Rebeccals">
                     <img src="https://avatars.githubusercontent.com/u/2145912?v=4" width="100;" alt="Rebeccals"/>
                     <br />
                     <sub><b>Rebecca Smith</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ardahk">
+                    <img src="https://avatars.githubusercontent.com/u/73215056?v=4" width="100;" alt="ardahk"/>
+                    <br />
+                    <sub><b>Arda Hoke</b></sub>
                 </a>
             </td>
             <td align="center">
