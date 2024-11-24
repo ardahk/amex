@@ -5,9 +5,13 @@ from load_data import *
 
 st.set_page_config(
     page_title="BTT Amex Product Recommendation System", 
-    layout="centered", 
-    initial_sidebar_state="collapsed"
+    layout="centered",
+    initial_sidebar_state="collapsed",
 )
+
+st.sidebar.page_link('app.py', label='Home')
+st.sidebar.page_link('pages/user_page.py', label='')
+
 
 # Hide Streamlit anchors and full screen icons
 st.markdown(
@@ -20,9 +24,9 @@ class App:
     # Load Home Page
     @staticmethod
     def load_home_page():
-        st.subheader("BTT AI Studio and Amex Team #1 Presents:")
-        st.header("User Product Recommendation System")
-        st.write("This Application Demonstrates our Two-Tower Product Recommendation Model.")
+        st.subheader("The BTT AI Studio and Amex Team #1 Presents:")
+        st.header("Welcome to the Attentive Recommendation Engine!")
+        st.write("This Application Demonstrates the teams recommendation system that leverages a two-tower architecture integrated with attention mechanisms.")
         st.write("---")
   
         profiles = []  # List to store user profiles
@@ -56,7 +60,6 @@ class App:
                     f'<a href="{user_link}" target="_self" style="text-decoration:none;"><h3>{profile["name"]}</h3></a>',
                     unsafe_allow_html=True,
                 )
-
                 
                 # Display user image (replace with your method to load an image)
                 st.image(profile['image'])

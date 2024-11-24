@@ -46,6 +46,7 @@ if user is not None:
     st.title(user['name'])
     st.subheader("User_id: " + str(user['user_id']))
     st.image(user['image'])
+    st.subheader("Products Purchased:")
     st.table(products)
 
 # Test the model's ability to generate recommendations
@@ -57,5 +58,5 @@ recommendations = generate_recommendations_for_user(user_id, model)
 st.header("Recommendations")
 df_recommendations = pd.DataFrame(recommendations, columns=["Product Name"])
 
-# Display the DataFrame without the index using st.table()
+# Display the DataFrame
 st.markdown(df_recommendations.to_html(index=False), unsafe_allow_html=True)
