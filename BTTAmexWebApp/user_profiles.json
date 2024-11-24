@@ -1,0 +1,180 @@
+[
+    {
+        "user_id": 72870,
+        "gender": "F",
+        "name": "Jessica Davis",
+        "image": "user_imgs/F/18.jpg",
+        "products": {
+            "name": {
+                "6831": "Only Hearts Second Skin Short Slip Black",
+                "7850": "Women's Winter Leather Mittens with Finger Liners"
+            },
+            "num_of_item": {
+                "6831": 2,
+                "7850": 2
+            },
+            "category": {
+                "6831": "Intimates",
+                "7850": "Accessories"
+            },
+            "department": {
+                "6831": "Women",
+                "7850": "Women"
+            },
+            "cost": {
+                "6831": 29.115999910980463,
+                "7850": 17.258400330780447
+            }
+        }
+    },
+    {
+        "user_id": 84533,
+        "gender": "M",
+        "name": "Ethan Nguyen",
+        "image": "user_imgs/M/3.jpg",
+        "products": {
+            "name": {
+                "10481": "Alfani RED Jacket Navy Stripe Slim Fit",
+                "19591": "Columbia Men's Tall Meeker Peak Short Sleeve Crew"
+            },
+            "num_of_item": {
+                "10481": 2,
+                "19591": 2
+            },
+            "category": {
+                "10481": "Suits & Sport Coats",
+                "19591": "Tops & Tees"
+            },
+            "department": {
+                "10481": "Men",
+                "19591": "Men"
+            },
+            "cost": {
+                "10481": 26.01835049544796,
+                "19591": 18.514999970793724
+            }
+        }
+    },
+    {
+        "user_id": 32742,
+        "gender": "M",
+        "name": "Andrew Martinez",
+        "image": "user_imgs/M/17.jpg",
+        "products": {
+            "name": {
+                "14758": "Columbia Men's Antimony Iii Jacket",
+                "16290": "Paul Fredrick 100% Wool Gabardine Pleated Front Pants"
+            },
+            "num_of_item": {
+                "14758": 2,
+                "16290": 2
+            },
+            "category": {
+                "14758": "Outerwear & Coats",
+                "16290": "Pants"
+            },
+            "department": {
+                "14758": "Men",
+                "16290": "Men"
+            },
+            "cost": {
+                "14758": 58.20164254868184,
+                "16290": 48.39900018274784
+            }
+        }
+    },
+    {
+        "user_id": 90446,
+        "gender": "F",
+        "name": "Isabella Martinez",
+        "image": "user_imgs/F/12.jpg",
+        "products": {
+            "name": {
+                "983": "Lace Halter Babydoll with Matching G-String Set L Red",
+                "5644": "Maidenform Women's Control It Shiny Collection Full Slip Bra",
+                "8966": "Nautica Sleepwear Women's Striped Henley",
+                "8967": "Roxy Juniors Getaway Zip Up"
+            },
+            "num_of_item": {
+                "983": 2,
+                "5644": 2,
+                "8966": 2,
+                "8967": 2
+            },
+            "category": {
+                "983": "Intimates",
+                "5644": "Intimates",
+                "8966": "Sleep & Lounge",
+                "8967": "Fashion Hoodies & Sweatshirts"
+            },
+            "department": {
+                "983": "Women",
+                "5644": "Women",
+                "8966": "Women",
+                "8967": "Women"
+            },
+            "cost": {
+                "983": 12.575999982655048,
+                "5644": 21.3359999768436,
+                "8966": 16.150000039488077,
+                "8967": 35.305999961681664
+            }
+        }
+    },
+    {
+        "user_id": 1545,
+        "gender": "F",
+        "name": "Natalie Thompson",
+        "image": "user_imgs/F/16.jpg",
+        "products": {
+            "name": {
+                "942": "Butt Pads Fake Butt Silicone Buttocks Shaper Panty with Smooth Control Instant Lift and Shape",
+                "4612": "Mother Tucker compression tank body shaper slimmer"
+            },
+            "num_of_item": {
+                "942": 2,
+                "4612": 2
+            },
+            "category": {
+                "942": "Intimates",
+                "4612": "Maternity"
+            },
+            "department": {
+                "942": "Women",
+                "4612": "Women"
+            },
+            "cost": {
+                "942": 29.211539777963456,
+                "4612": 32.806548604165016
+            }
+        }
+    },
+    {
+        "user_id": 29055,
+        "gender": "F",
+        "name": "Emily Smith",
+        "image": "user_imgs/F/0.jpg",
+        "products": {
+            "name": {
+                "1465": "Black Lace Bottom Footless Tights Capri Leggings",
+                "1466": "Resorts Plus Plus Size Cover-up for swimsuit Swim365"
+            },
+            "num_of_item": {
+                "1465": 2,
+                "1466": 2
+            },
+            "category": {
+                "1465": "Leggings",
+                "1466": "Swim"
+            },
+            "department": {
+                "1465": "Women",
+                "1466": "Women"
+            },
+            "cost": {
+                "1465": 5.584409875627756,
+                "1466": 17.6355908003895
+            }
+        }
+    }
+]
