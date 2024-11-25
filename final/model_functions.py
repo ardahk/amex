@@ -3,8 +3,11 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+import matplotlib.pyplot as plt
 
 def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs):
+    epochs, all_accuracy, all_precision, all_recall, all_f1, all_auc = [],[],[],[],[],[] 
+
     for epoch in range(num_epochs):
         # initilize the target similarity for the batch
         target_similarity = []
@@ -69,15 +72,35 @@ def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs
         y_pred = (predicted_probabilities > 0.5).astype(int)
 
         # Evaluate the model on the test data
-        accuracy = accuracy_score(y_test, y_pred)
+        '''accuracy = accuracy_score(y_test, y_pred)
         precision = precision_score(y_test, y_pred)
         recall = recall_score(y_test, y_pred)
         f1 = f1_score(y_test, y_pred)
-        auc = roc_auc_score(y_test, predicted_probabilities)
+        auc = roc_auc_score(y_test, predicted_probabilities)'''
 
-        print(f"Epoch {epoch + 1}/{num_epochs} - "
-              f"Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, "
-              f"F1 Score: {f1:.4f}, ROC AUC: {auc:.4f}")
+        epochs.append(epoch)
+        all_accuracy.append(accuracy_score(y_test, y_pred))
+        all_precision.append(precision_score(y_test, y_pred))
+        all_recall.append(recall_score(y_test, y_pred))
+        all_f1.append(f1_score(y_test, y_pred))
+        all_auc.append(roc_auc_score(y_test, predicted_probabilities))
+
+        #print(f"Epoch {epoch + 1}/{num_epochs} - "
+        #      f"Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, "
+        #     f"F1 Score: {f1:.4f}, ROC AUC: {auc:.4f}")
+    graph_model_results(epochs, all_accuracy, all_precision, all_recall, all_f1, all_auc)
+    
+
+def graph_model_results(epochs, accuracy, precision, recall, f1, auc):
+    plt.xlabel("Epochs")
+    plt.plot(epochs, accuracy, label="accuracy")
+    plt.plot(epochs, precision, label="precision")
+    plt.plot(epochs, recall, label="recall")
+    plt.plot(epochs, f1, label="f1")
+    plt.plot(epochs, auc, label="auc")
+    plt.legend()
+    plt.show()
+
 
 
 #Function to generate recommendations
