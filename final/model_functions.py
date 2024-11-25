@@ -1,5 +1,6 @@
 #file to collect functions related to model training and evaluation
 import numpy as np
+import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
@@ -77,3 +78,35 @@ def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs
         print(f"Epoch {epoch + 1}/{num_epochs} - "
               f"Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, "
               f"F1 Score: {f1:.4f}, ROC AUC: {auc:.4f}")
+
+
+#Function to generate recommendations
+def generate_recommendations(test_users_df, products_df, model, top_n=10):
+    # Randomly select a user
+    random_user_row = test_users_df.sample(1)
+    random_user_id = random_user_row['user_id'].values[0]
+    print(f"Generating recommendations for user ID: {random_user_id}...")
+
+    # Prepare user data for the selected user
+    user_data = random_user_row.drop(columns=['product_id', 'user_id']).values
+    user_data_repeated = np.repeat(user_data, len(products_df), axis=0)
+
+    # Prepare product data
+    product_data = products_df.drop(columns=['product_id', 'flattened_name_embedding', 'flattened_brand_embedding']).values
+
+    print("User data repeated shape:", user_data_repeated.shape)
+    print("Product data shape:", product_data.shape)
+    # Predict probabilities
+    predicted_probabilities = model.predict([user_data_repeated, product_data]).flatten()
+
+    # Sort product recommendations by increasing probability
+    sorted_indices = np.argsort(predicted_probabilities)
+    sorted_products = products_df.iloc[sorted_indices]
+
+    # Display top N recommendations
+    top_recommendations = sorted_products.head(top_n)
+    #print("Top recommendations (sorted by increasing probability of interaction):")
+    #print(top_recommendations[['product_id']])
+
+    #Returns a list of the top n product IDs
+    return top_recommendations[['product_id']]['product_id'].tolist()
