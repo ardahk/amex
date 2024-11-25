@@ -1,6 +1,5 @@
 #Utility file to collect all the functions defined for the generating recommendations functionality.
 
-
 #Checks if a user exits in a dataframe
 def check_user_exists(users_df, user_id):
     if user_id in users_df['user_id'].values:
