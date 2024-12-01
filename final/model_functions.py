@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 import matplotlib.pyplot as plt
 
-def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs):
+def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs, graph=True):
     epochs, all_accuracy, all_precision, all_recall, all_f1, all_auc = [],[],[],[],[],[] 
 
     for epoch in range(num_epochs):
@@ -88,7 +88,12 @@ def create_labels_and_train(users_df, products_df, model, batch_size, num_epochs
         #print(f"Epoch {epoch + 1}/{num_epochs} - "
         #      f"Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, "
         #     f"F1 Score: {f1:.4f}, ROC AUC: {auc:.4f}")
-    graph_model_results(epochs, all_accuracy, all_precision, all_recall, all_f1, all_auc)
+    if graph:
+        graph_model_results(epochs, all_accuracy, all_precision, all_recall, all_f1, all_auc)
+        return
+    
+    return all_accuracy[-1], all_precision[-1]
+
     
 
 def graph_model_results(epochs, accuracy, precision, recall, f1, auc):
